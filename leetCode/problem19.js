@@ -7,10 +7,8 @@ var pivotIndex = function (nums) {
     if (leftsum === totalSum) {
       return index;
     }
-
     leftsum += nums[index];
   }
-
   return -1;
 };
 const nums = [1, 7, 3, 6, 5, 6];
