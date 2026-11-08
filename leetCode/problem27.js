@@ -22,10 +22,3 @@ class RecentCounter {
   }
 }
 let counter = new RecentCounter();
-
-counter.ping(1); // 1
-counter.ping(100); // 2
-counter.ping(3001); // 3
-counter.ping(3002); // 3
-
-console.log(counter);
