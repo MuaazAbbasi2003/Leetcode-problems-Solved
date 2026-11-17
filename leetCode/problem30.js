@@ -5,7 +5,7 @@ class TreeNode {
     this.right = null;
   }
 }
-function rightSideView(root) {
+function levelOrder(root) {
   if (root === null) return [];
   let queue = [root];
   let val = [];
@@ -35,4 +35,4 @@ root.left.left = new TreeNode(7);
 root.right.left = new TreeNode(15);
 root.right.right = new TreeNode(8);
 
-console.log(rightSideView(root));
+console.log(levelOrder(root));
