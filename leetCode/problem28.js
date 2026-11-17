@@ -15,16 +15,12 @@ var predictPartyVictory = function (senate) {
   while (radiantFront < radient.length && direFront < dire.length) {
     let val1 = radient[radiantFront];
     let val2 = dire[direFront];
-
-    // both senators are consumed from the front this round
     radiantFront++;
     direFront++;
 
     if (val1 > val2) {
-      // Dire acts first, bans Radiant, and re-queues for the next round
       dire.push(val2 + senate.length);
     } else {
-      // Radiant acts first, bans Dire, and re-queues for the next round
       radient.push(val1 + senate.length);
     }
   }
