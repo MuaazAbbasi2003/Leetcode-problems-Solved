@@ -32,18 +32,5 @@
 
 // console.log(hel);
 
-let arr1 = [1, 2, 3, 4, 5, 6];
-let aar2 = [2, 3, 4, 8];
-function isCommon(a, b) {
-  let arr = [];
-  let arr2 = new Set(b);
-  for (let index = 0; index < a.length; index++) {
-    let element = a[index];
-    if (arr2.has(element)) {
-      arr.push(element);
-    }
-  }
-  return arr;
-}
 
-console.log(isCommon(arr1, aar2));
+
